@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Liter&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap");
+
+:root {
+  --bg: #bde0fe;
+  --main: #a6cdc6;
+  --gray: #233d4d;
+  --orange: #fe7f2d;
+  --whitegray: #ebebeb;
+  /* Fonts */
+  --Montserrat: "Montserrat";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  margin-top: 50px;
+  background-color: var(--main);
+  border-radius: 30px;
+}
+
+h1 {
+  font-size: 25px;
+  margin-top: 30px;
+  font-family: var(--Montserrat);
+  color: var(--gray);
+}
+
+.div-contents {
+  margin-top: 10px;
+  width: 300px;
+  height: 100px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #233d4d;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 5px gray;
+}
+
+.input-bar {
+  width: 70%;
+  height: 45px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  border: 1px groove var(--main);
+}
+
+button {
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: var(--orange);
+  border: none;
+  box-shadow: 1px 2px 3px 2px #0f0a0a;
+  cursor: pointer;
+}
+
+.output {
+  margin-top: 15px;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: var(--whitegray);
+  box-shadow: 0 0 1px 5px var(--gray);
+  /* display: none; */
+}
+
+@media screen and (max-width: 690px) {
+  main {
+    width: 370px;
+    height: 300px;
+    margin-top: 10rem;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
