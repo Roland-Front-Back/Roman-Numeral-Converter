@@ -90,6 +90,11 @@ button:active:hover {
 }
 
 .output {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
   margin-top: 15px;
   width: 300px;
   max-width: 100%;
