@@ -27,6 +27,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 500px;
+  max-width: 100%;
   height: 300px;
   margin-top: 50px;
   background-color: var(--main);
@@ -43,6 +44,7 @@ h1 {
 .div-contents {
   margin-top: 10px;
   width: 300px;
+  max-width: 100%;
   height: 100px;
   padding: 5px;
   display: flex;
@@ -56,6 +58,7 @@ h1 {
 
 .input-bar {
   width: 70%;
+  max-width: 100%;
   height: 45px;
   border-radius: 5px;
   padding: 5px;
@@ -63,8 +66,15 @@ h1 {
   border: 1px groove var(--main);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 button {
   width: 60px;
+  max-width: 100%;
   height: 30px;
   border-radius: 5px;
   background-color: var(--orange);
@@ -73,9 +83,16 @@ button {
   cursor: pointer;
 }
 
+button:active:hover {
+  box-shadow: 0 3px #0f0a0a;
+  transform: translateY(1px);
+  background-color: var(--whitegray);
+}
+
 .output {
   margin-top: 15px;
   width: 300px;
+  max-width: 100%;
   height: 50px;
   border-radius: 5px;
   background-color: var(--whitegray);
@@ -86,6 +103,7 @@ button {
 @media screen and (max-width: 690px) {
   main {
     width: 370px;
+    max-width: 100%;
     height: 300px;
     margin-top: 10rem;
   }
