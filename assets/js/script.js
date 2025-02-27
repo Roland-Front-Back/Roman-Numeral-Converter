@@ -3,7 +3,7 @@ const convertBtn = document.getElementById("convert-btn");
 const output = document.getElementById("output");
 
 
-function decimalToRoman(input) {
+const decimalToRoman = (input) => {
   const letters = [
     "M",
     "CM",
@@ -19,11 +19,11 @@ function decimalToRoman(input) {
     "IV",
     "I",
   ];
-  const lookupValues = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+  const values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
   let result = "";
   for (let index = 0; input; index++) {
-    while (input >= lookupValues[index]) {
-      input -= lookupValues[index];
+    while (input >= values[index]) {
+      input -= values[index];
       result += letters[index];
     }
   }
